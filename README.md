@@ -1,11 +1,24 @@
-<div align="center">
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+# Epiphany STSTW: Digital Headquarters
 
-  <h1>Built with AI Studio</h2>
+This is the official repository for the **Epiphany STSTW** movement.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## How to Deploy to GitHub Pages
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. **Create a New Repository:** Go to GitHub and create a new repository named `ststw`.
+2. **Upload Files:** Upload all files from this project (index.html, App.tsx, index.tsx, components/, services/, etc.).
+3. **Configure Pages:**
+   - Go to **Settings** > **Pages**.
+   - Under **Build and deployment**, select `Deploy from a branch`.
+   - Choose the `main` branch and the `/ (root)` folder.
+   - Click **Save**.
+4. **Access your Movement:** Your site will be live at `https://[your-username].github.io/ststw/`.
 
-</div>
+## Movement Architecture
+- **Vision Sector:** Overview of the 1,000-year plan.
+- **Info Portal:** Technical blueprints for Triumvirate leadership.
+- **AI Labs:** Generative tools for visualising future societal states.
+- **Collective Sync:** Live voice/transcription hub for founders.
+
+---
+*"It doesn't have to be this way." - Desmond Antonio Franklin Hurst-Alves*

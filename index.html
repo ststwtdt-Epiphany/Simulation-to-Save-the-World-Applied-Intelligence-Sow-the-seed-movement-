@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Epiphany STSTW | Simulation To Save The World</title>
+    <meta name="title" content="Epiphany STSTW | Simulation To Save The World">
+    <meta name="description" content="A new operating system for humanity. Join the movement to recondition societal structures through balanced leadership and AI-driven transparency.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-username.github.io/ststw/">
+    <meta property="og:title" content="Epiphany STSTW | Functional Humanity">
+    <meta property="og:description" content="It doesn't have to be this way. Explore the blueprint for a 1,000-year planetary plan.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Epiphany STSTW | Functional Humanity">
+    <meta property="twitter:description" content="The upgrade for the human hive mind. Join the founding architect Desmond Antonio Franklin Hurst-Alves.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=1200">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --ststw-purple: #a855f7;
+            --ststw-orange: #f97316;
+            --ststw-fuchsia: #d946ef;
+            --ststw-cyan: #22d3ee;
+            --ststw-bg: #020617;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--ststw-bg);
+            color: #f8fafc;
+            overflow-x: hidden;
+            margin: 0;
+        }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, var(--ststw-cyan) 0%, var(--ststw-fuchsia) 33%, var(--ststw-purple) 66%, var(--ststw-orange) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .orange-glow { box-shadow: 0 0 40px rgba(249, 115, 22, 0.3); }
+        .ststw-glow { box-shadow: 0 0 60px rgba(139, 92, 246, 0.15); }
+        .circuit-bg {
+            background-image: radial-gradient(circle at 2px 2px, rgba(168, 85, 247, 0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(249, 115, 22, 0.3);
+            border-radius: 10px;
+        }
+
+        /* --- Cinematic Shutter & Slide Animations --- */
+        @keyframes shutter-in {
+            0% { clip-path: inset(0 100% 0 0); }
+            100% { clip-path: inset(0 0 0 0); }
+        }
+        @keyframes shutter-out {
+            0% { clip-path: inset(0 0 0 0); }
+            100% { clip-path: inset(0 0 0 100%); }
+        }
+        .animate-shutter-in { animation: shutter-in 0.8s cubic-bezier(0.77, 0, 0.175, 1) forwards; }
+        .animate-shutter-out { animation: shutter-out 0.8s cubic-bezier(0.77, 0, 0.175, 1) forwards; }
+
+        @keyframes content-slide-in {
+            0% { transform: translateX(50px); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+        .animate-content-slide { animation: content-slide-in 1s cubic-bezier(0.19, 1, 0.22, 1) forwards; }
+
+        @keyframes scanline {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
+        .scanline {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to bottom, transparent, rgba(34, 211, 238, 0.1), transparent);
+            position: absolute;
+            animation: scanline 4s linear infinite;
+        }
+
+        /* --- Drift & Random Paths --- */
+        @keyframes drift {
+            0% { transform: scale(1) translate(0, 0); }
+            33% { transform: scale(1.1) translate(-2%, 2%); }
+            66% { transform: scale(1.05) translate(2%, -1%); }
+            100% { transform: scale(1) translate(0, 0); }
+        }
+        .animate-drift { animation: drift 30s ease-in-out infinite; }
+
+        @keyframes random-path-1 {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(20vw, 15vh) rotate(90deg); }
+            50% { transform: translate(-10vw, 30vh) rotate(180deg); }
+            75% { transform: translate(-30vw, 5vh) rotate(270deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+        @keyframes random-path-2 {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(-25vw, 20vh) rotate(-120deg); }
+            66% { transform: translate(15vw, -10vh) rotate(-240deg); }
+            100% { transform: translate(0, 0) rotate(-360deg); }
+        }
+        @keyframes random-path-3 {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(10vw, -40vh) rotate(180deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+
+        .floating-node {
+            position: absolute;
+            pointer-events: none;
+            border: 1px solid rgba(255,255,255,0.05);
+            background: rgba(255,255,255,0.02);
+            backdrop-filter: blur(4px);
+            z-index: 2;
+        }
+
+        .shimmer-text {
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            animation: shimmer-sweep 8s linear infinite;
+        }
+
+        @keyframes orb-float {
+            0% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+            33% { transform: translate(10vw, -10vh) scale(1.2); opacity: 0.6; }
+            66% { transform: translate(-5vw, 5vh) scale(0.8); opacity: 0.4; }
+            100% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+        }
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            pointer-events: none;
+            z-index: 1;
+            mix-blend-mode: plus-lighter;
+        }
+        .orb-1 { width: 40vw; height: 40vw; background: var(--ststw-cyan); animation: orb-float 25s infinite; left: -10%; top: -10%; }
+        .orb-2 { width: 35vw; height: 35vw; background: var(--ststw-orange); animation: orb-float 32s infinite; right: -5%; bottom: -5%; animation-delay: -5s; }
+        .orb-3 { width: 30vw; height: 30vw; background: var(--ststw-purple); animation: orb-float 28s infinite; left: 30%; top: 40%; animation-delay: -10s; }
+        
+        @keyframes shimmer-sweep {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .shimmer-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                45deg,
+                rgba(255,255,255,0) 0%,
+                rgba(255,255,255,0.02) 45%,
+                rgba(255,255,255,0.05) 50%,
+                rgba(255,255,255,0.02) 55%,
+                rgba(255,255,255,0) 100%
+            );
+            background-size: 200% 200%;
+            animation: shimmer-sweep 15s linear infinite;
+            pointer-events: none;
+        }
+    </style>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+      }
+    }
+    </script>
+</head>
+<body class="circuit-bg">
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>

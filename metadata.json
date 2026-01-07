@@ -1,0 +1,8 @@
+{
+  "name": "Epiphany STSTW - Balanced Leadership Movement",
+  "description": "A digital headquarters for a movement to upgrade society's operating system through balanced leadership, direct democracy, and AI-driven transparency.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation"
+  ]
+}
